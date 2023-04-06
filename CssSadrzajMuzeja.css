@@ -1,0 +1,312 @@
+﻿
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p{
+    font-size:19px;
+}
+
+
+/*SADRZAJ MUZEJA*/
+
+#PromoSlikaSadrzajMuzeja{
+    width:100%;
+    height:500px;
+}
+
+@media only screen and (max-width: 650px) {
+    #PromoSlikaSadrzajMuzeja {
+        height: 300px;
+    }
+}
+
+#prviRed {
+    margin-top:50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.sadrzajMuzeja {
+    border-style: solid;
+    border-color: black;
+    border-radius: 35px;
+    background-color: #857367;
+    margin: 20px;
+}
+
+    .sadrzajMuzeja:hover {
+        background-color: #bda393;
+    }
+
+#drugiRed {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+
+@media only screen and (max-width: 790px){
+    #prviRed {
+        display: flex;
+       flex-wrap: wrap;
+    }
+    #drugiRed {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
+
+#narodneNosnjeKontejner:hover {
+    background-color: #bda393;
+}
+#zanatskiAlatKontejner:hover {
+    background-color: #bda393;
+}
+#antikvitetiKontejner:hover {
+    background-color: #bda393;
+}
+#bibliotekaKontejner:hover {
+    background-color: #bda393;
+}
+#slikeKontejner:hover {
+    background-color: #bda393;
+}
+
+/*NARODNE NOŠNJE*/
+
+
+
+#divNarodneNosnje {
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+aside {
+    float: right;
+}
+
+@media only screen and (max-width: 500px)  {
+     aside{
+        float:none;
+        display:flex;
+        justify-content:center;
+        
+    }
+}
+@media only screen and  (max-width: 1366px) {
+    #divNarodneNosnje {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media only screen and (min-width: 1770px) /*and (max-height: 768px?)*/ {
+    aside img {
+        width :150px;
+        height:200px;
+    }
+}
+
+/*BIBLIOTEKA*/
+
+#KnjigeBiblioteka {
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+#KnjigeBibliotekaSlika {
+    margin-left: 5%;
+}
+
+@media only screen and (min-width: 1765px)  {
+    #KnjigeBibliotekaSlika{
+        width:250px;
+        height:300px;
+        margin-left:5%;
+    }
+}
+
+
+
+/*ZANATSKI ALATI*/
+
+#divZanatskiAlati {
+    margin-left: 5%;
+    margin-right: 5%; 
+}
+#prviTekst {
+    float: left;
+    width: 49%;
+    margin: 0.5%;
+}
+#drugiTekst {
+    float: left;
+    width: 49%;
+    margin: 0.5%;
+}
+#slikeAlatiDiv {
+    clear: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 500px)  {
+    #divZanatskiAlati {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align:justify;
+    }
+    #slikeAlatiDiv img{
+        width:200px;
+        height:200px;    
+    }
+}
+
+/*ANTIKVITETI*/
+
+#LeviFiksni {
+    width: 350px;
+    margin-left: 50px;
+    float:left;
+    position: relative;
+}
+#DesniFluidni {
+    position: relative;
+    width: auto;
+    margin-right: 25px;
+    margin-left: 25px;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom:100px;
+    margin-top:20px;
+}
+#futerAntikviteti {
+    background-color: #6F696C;
+    text-align: center;
+    font-size: 2vh;
+    position: fixed;
+    bottom: -4px;
+    width: 98.5%;
+}
+@media only screen and (max-width: 1000px) {
+    #LeviFiksni {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+        margin:10%;
+    }
+
+    #DesniFluidni {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 200px;
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    #futerAntikviteti {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #futerAntikviteti{
+        width:97%;
+    }
+}
+
+/*SLIKE*/
+
+#IzlozbaSlike{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+
+#SlikeMuzeja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+
+#RoditeljDivSlike {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#IzlozbaSlike > img {
+    width: 300px;
+    height: 300px;
+    margin: 1%;
+    border-radius: 10%;
+}
+
+    #IzlozbaSlike > img + img + img + img + img + img + img {
+        width: 450px;
+        height: 300px;
+        margin: 1%;
+        border-radius: 10%;
+    }
+
+#SlikeMuzeja > img {
+    width: 300px;
+    height: 300px;
+    margin: 1%;
+    border-radius: 10%;
+}
+
+#SlikeMuzeja .siraSlika {
+    width: 450px;
+}
+
+@media only screen and (max-width: 500px)  {
+    #IzlozbaSlike > img {
+        width: 150px;
+        height: 150px;
+       
+    }
+
+        #IzlozbaSlike > img + img + img + img + img + img + img, #SlikeMuzeja .siraSlika {
+            width: 250px;
+            height: 150px;
+        }
+
+
+    #SlikeMuzeja > img {
+        width: 150px;
+        height: 150px;
+      
+    }
+
+}
+
+@media only screen and (max-width: 330px) {
+    #IzlozbaSlike > img + img + img + img + img + img + img, #SlikeMuzeja .siraSlika {
+        width:200px;
+        
+    }
+}
